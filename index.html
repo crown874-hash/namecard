@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="증상을 쫓기보다 균형을 세우는 생활습관 교육 파트너, 정시영입니다. BBB with 3S — 안전하게 · 천천히 · 꾸준히.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="정시영 | 지앤지뷰티플러스 대표 · The Soomgil Academy">
+<meta property="og:description" content="증상을 쫓기보다 균형을 세우는 생활습관 교육 파트너. BBB with 3S — 안전하게 · 천천히 · 꾸준히.">
+<meta property="og:url" content="https://crown874-hash.github.io/namecard/">
+<meta property="og:image" content="https://crown874-hash.github.io/namecard/og.png?v=20261019">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="photo.webp">
+<title>정시영 | 지앤지뷰티플러스 대표</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap">
+<style>
+/* Layout: 한 줄 세로 명함(모바일 우선) — 숨 쉬는 원(hero) → 철학 → 고민 → 프로그램 → 약속 → 연락. 하단 고정 액션바 */
+:root{
+  --bg:#F2F5F3; --surface:#FFFFFF; --ink:#15242A; --muted:#566769; --line:#D6DFDC;
+  --breath:#2E6B66; --breath-soft:#E1ECE9; --sun:#B9761F; --sun-soft:#F6EAD6; --on-accent:#FFFFFF;
+  --f-display:"Gowun Batang","Nanum Myeongjo",Georgia,serif;
+  --f-body:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0F1A1D; --surface:#152427; --ink:#E6EEEB; --muted:#9BACAA; --line:#273A3C;
+  --breath:#82BDB4; --breath-soft:#1B3032; --sun:#E3AE5C; --sun-soft:#2E2618; --on-accent:#0F1A1D; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0F1A1D; --surface:#152427; --ink:#E6EEEB; --muted:#9BACAA; --line:#273A3C;
+  --breath:#82BDB4; --breath-soft:#1B3032; --sun:#E3AE5C; --sun-soft:#2E2618; --on-accent:#0F1A1D; color-scheme:dark}
+
+*{box-sizing:border-box}
+html{padding-top:env(safe-area-inset-top,0px)}
+body{margin:0}
+img{max-width:100%}
+[hidden]{display:none!important}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.75;word-break:keep-all;padding-bottom:84px}
+.wrap{max-width:640px;margin:0 auto;padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--f-display);font-weight:700;text-wrap:balance;margin:0;line-height:1.35}
+p{margin:0}
+a{color:inherit}
+.l-en{display:none}
+body.en .l-ko{display:none}
+body.en .l-en{display:revert}
+
+/* top bar */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:10px}
+.brand{font-family:var(--f-display);font-size:15px;letter-spacing:.02em}
+.brand b{color:var(--breath)}
+.lang{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden}
+.lang button{all:unset;cursor:pointer;font-size:12px;font-weight:600;letter-spacing:.08em;padding:5px 12px;color:var(--muted)}
+.lang button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.lang button:focus-visible,.btn:focus-visible,.chip:focus-visible{outline:2px solid var(--sun);outline-offset:2px}
+
+/* hero */
+.hero{padding-block:40px 32px;text-align:center}
+.orb{position:relative;width:min(250px,68vw);aspect-ratio:1;max-width:100%;margin:0 auto 22px;display:grid;place-items:center}
+.orb::before,.orb::after{content:"";position:absolute;inset:0;border-radius:50%}
+.orb::before{background:radial-gradient(circle at 50% 42%,var(--sun-soft) 0,var(--breath-soft) 62%,transparent 72%);animation:breathe 10s ease-in-out infinite}
+.orb::after{border:1px solid var(--breath);opacity:.35;animation:breathe 10s ease-in-out infinite reverse}
+.orb .pf{position:relative;width:76%;aspect-ratio:1;max-width:100%;border-radius:50%;object-fit:cover;object-position:50% 18%;border:3px solid var(--surface);box-shadow:0 10px 30px -12px rgba(21,36,42,.45)}
+.orb .cue{position:absolute;bottom:-14px;left:50%;transform:translateX(-50%);font-size:11px;letter-spacing:.14em;color:var(--muted);white-space:nowrap}
+@keyframes breathe{0%{transform:scale(.84)}40%{transform:scale(1)}100%{transform:scale(.84)}}
+@media (prefers-reduced-motion:reduce){.orb::before,.orb::after{animation:none}}
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--sun)}
+.name{font-size:clamp(34px,9vw,44px);margin-top:6px}
+.name small{display:block;font-family:var(--f-body);font-size:13px;font-weight:500;letter-spacing:.18em;color:var(--muted);margin-top:4px}
+.role{margin-top:12px;color:var(--muted);font-size:15px}
+.thesis{margin:26px auto 0;max-width:30em;font-family:var(--f-display);font-size:clamp(20px,5.2vw,24px);line-height:1.55}
+.thesis em{font-style:normal;color:var(--breath)}
+.sub{margin:14px auto 0;max-width:34em;color:var(--muted);font-size:15px}
+.quick{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:26px}
+.chip{display:flex;flex-direction:column;align-items:center;gap:4px;padding:12px 4px;border:1px solid var(--line);border-radius:14px;background:var(--surface);text-decoration:none;font-size:12.5px;font-weight:500;cursor:pointer;font-family:inherit;color:var(--ink)}
+.chip svg{width:22px;height:22px;stroke:var(--breath);fill:none;stroke-width:1.6}
+
+/* sections */
+section{padding-block:44px;border-top:1px solid var(--line)}
+.kicker{font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--breath)}
+.h2{font-size:clamp(23px,6vw,28px);margin-top:8px}
+.lead{margin-top:12px;color:var(--muted)}
+.prose{margin-top:20px;display:grid;gap:14px}
+.prose p:last-child{font-family:var(--f-display);font-size:18px;color:var(--ink)}
+
+.about-head{display:grid;grid-template-columns:1fr 132px;gap:14px;align-items:end}
+.about-head>div{min-width:0}
+.avatar{width:132px;max-width:100%;aspect-ratio:1;border-radius:50%;background:var(--sun-soft);object-fit:cover;object-position:50% 8%}
+@media (max-width:420px){.about-head{grid-template-columns:1fr 96px}.avatar{width:96px}}
+/* 3S */
+.s3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:22px}
+.s3 div{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px 12px;text-align:center;min-width:0}
+.s3 b{display:block;font-family:var(--f-display);font-size:20px;color:var(--breath)}
+.s3 span{display:block;font-size:13px;font-weight:600;margin-top:2px}
+.s3 p{font-size:12.5px;color:var(--muted);margin-top:8px;line-height:1.55}
+.habits{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;justify-content:center}
+.habits span{font-size:13px;padding:5px 12px;border-radius:999px;background:var(--breath-soft);color:var(--ink)}
+.bbb{margin-top:22px;display:grid;gap:0;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--surface)}
+.bbb div{display:grid;grid-template-columns:2.2em 1fr;gap:10px;padding:12px 16px;border-top:1px solid var(--line);font-size:14px}
+.bbb div:first-child{border-top:0}
+.bbb i{font-style:normal;font-family:var(--f-display);color:var(--sun);font-weight:700}
+.bbb strong{font-weight:600}
+.bbb small{display:block;color:var(--muted);font-size:12.5px}
+
+/* concerns */
+.quotes{display:grid;gap:12px;margin-top:22px}
+.q{padding:16px 18px;background:var(--surface);border:1px solid var(--line);border-radius:16px}
+.q h3{font-size:17.5px}
+.q p{font-size:13.5px;color:var(--muted);margin-top:6px}
+.after{margin-top:18px;font-family:var(--f-display);font-size:17px;text-align:center}
+
+/* why */
+.why{display:grid;gap:18px;margin-top:22px}
+.why article{display:grid;grid-template-columns:auto 1fr;gap:14px}
+.why .n{font-family:var(--f-display);font-size:28px;color:var(--sun);line-height:1}
+.why h3{font-size:18px}
+.why p{font-size:14.5px;color:var(--muted);margin-top:4px}
+
+/* steps */
+.steps{display:grid;gap:0;margin-top:22px;position:relative}
+.step{display:grid;grid-template-columns:44px 1fr;gap:12px;padding-bottom:18px;position:relative}
+.step::before{content:"";position:absolute;left:21px;top:40px;bottom:0;width:1px;background:var(--line)}
+.step:last-child::before{display:none}
+.dot{width:42px;height:42px;border-radius:50%;border:1px solid var(--breath);display:grid;place-items:center;font-size:12px;font-weight:600;color:var(--breath);background:var(--bg)}
+.step h3{font-size:17px;margin-top:8px}
+.step p{font-size:14px;color:var(--muted);margin-top:4px}
+
+/* programs */
+.prog{display:grid;gap:12px;margin-top:22px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:18px}
+.card.feature{border-color:var(--breath);box-shadow:0 0 0 3px var(--breath-soft)}
+.card .tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.1em;color:var(--sun);text-transform:uppercase}
+.card h3{font-size:19px;margin-top:4px}
+.card p{font-size:14px;color:var(--muted);margin-top:6px}
+.meta{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;margin-top:12px;font-size:13.5px;font-variant-numeric:tabular-nums}
+.meta dt{color:var(--muted)}
+.meta dd{margin:0;font-weight:500}
+.note{font-size:12.5px;color:var(--muted);margin-top:14px}
+
+/* promise */
+.promise{counter-reset:p;display:grid;gap:10px;margin-top:22px;padding:0;list-style:none}
+.promise li{display:grid;grid-template-columns:28px 1fr;gap:10px;font-size:15px}
+.promise li::before{counter-increment:p;content:counter(p);width:26px;height:26px;border-radius:50%;background:var(--sun-soft);color:var(--sun);font-weight:600;font-size:13px;display:grid;place-items:center;margin-top:2px}
+.promise small{display:block;color:var(--muted);font-size:13px}
+
+/* faq */
+details{border-bottom:1px solid var(--line);padding-block:14px}
+details:first-of-type{margin-top:16px;border-top:1px solid var(--line)}
+summary{cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--breath);font-size:20px;line-height:1}
+details[open] summary::after{content:"–"}
+details p{color:var(--muted);font-size:14.5px;margin-top:8px}
+
+/* referral */
+.ref{display:grid;gap:10px;margin-top:22px}
+.ref div{padding:14px 16px;border-left:3px solid var(--sun);background:var(--surface);border-radius:0 12px 12px 0}
+.ref b{display:block;font-size:15px}
+.ref span{font-size:13.5px;color:var(--muted)}
+.ask{margin-top:20px;padding:20px;border-radius:18px;background:var(--breath);color:var(--on-accent);font-family:var(--f-display);font-size:17.5px;line-height:1.6;text-align:center}
+.ask small{display:block;font-family:var(--f-body);font-size:13px;opacity:.85;margin-top:8px}
+
+/* career */
+.tl{display:grid;gap:16px;margin-top:22px}
+.tl div{display:grid;grid-template-columns:64px 1fr;gap:12px}
+.tl .k{font-size:11.5px;font-weight:600;letter-spacing:.08em;color:var(--sun);padding-top:3px}
+.tl h3{font-size:16.5px}
+.tl p{font-size:13.5px;color:var(--muted);margin-top:2px}
+.partner{margin-top:22px;padding:16px 18px;border:1px dashed var(--breath);border-radius:16px;font-size:13.5px}
+.partner b{font-family:var(--f-display);font-size:16px}
+.partner p{color:var(--muted);margin-top:4px}
+
+/* contact */
+.clist{display:grid;gap:8px;margin-top:22px}
+.row{display:grid;grid-template-columns:92px 1fr auto;align-items:center;gap:10px;padding:12px 14px;background:var(--surface);border:1px solid var(--line);border-radius:14px;font-size:14px}
+.row .lb{color:var(--muted);font-size:12.5px}
+.row a,.row span.v{min-width:0;overflow-wrap:anywhere;font-weight:500;text-decoration:none}
+.cp{all:unset;cursor:pointer;font-size:12px;color:var(--breath);font-weight:600;padding:4px 6px}
+.cp:focus-visible{outline:2px solid var(--sun)}
+.btns{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:16px}
+.btn{all:unset;box-sizing:border-box;cursor:pointer;text-align:center;padding:14px;border-radius:14px;font-weight:600;font-size:14.5px;border:1px solid var(--line);background:var(--surface)}
+.btn.main{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.qrbox{margin-top:16px;padding:20px;background:var(--surface);border:1px solid var(--line);border-radius:18px;text-align:center}
+.qrbox .qr{width:200px;max-width:100%;margin:0 auto;background:#fff;padding:10px;border-radius:12px}
+.qrbox .qr svg{display:block;width:100%;height:auto}
+.qrbox p{font-size:13px;color:var(--muted);margin-top:10px}
+
+footer{padding-block:36px 24px;border-top:1px solid var(--line);text-align:center}
+footer .slogan{font-family:var(--f-display);font-size:18px}
+footer p{font-size:12px;color:var(--muted);margin-top:10px;line-height:1.6}
+
+/* bottom bar */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:9;background:var(--surface);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom,0px)}
+.bar .wrap{display:grid;grid-template-columns:1fr 1fr 1.3fr;gap:8px;padding-block:10px}
+.bar a,.bar button{all:unset;box-sizing:border-box;cursor:pointer;text-align:center;padding:11px 6px;border-radius:12px;font-size:13.5px;font-weight:600;border:1px solid var(--line)}
+.bar .go{background:var(--breath);color:var(--on-accent);border-color:var(--breath)}
+.toast{position:fixed;left:50%;bottom:calc(86px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);font-size:13px;padding:8px 16px;border-radius:999px;z-index:20}
+@media (max-width:380px){.quick{grid-template-columns:repeat(2,1fr)}.s3{grid-template-columns:1fr}.row{grid-template-columns:76px 1fr auto}}
+</style>
+</head>
+<body>
+
+<header class="top"><div class="wrap">
+  <div class="brand"><b>GNG</b> Beauty Plus</div>
+  <div class="lang" role="group" aria-label="Language">
+    <button id="bt-ko" aria-pressed="true">KO</button><button id="bt-en" aria-pressed="false">EN</button>
+  </div>
+</div></header>
+
+<main>
+<!-- HERO -->
+<div class="hero"><div class="wrap">
+  <div class="orb"><img class="pf" src="photo.webp" alt="정시영 대표 프로필 사진">
+    <span class="cue"><span class="l-ko">4초 들이쉬고 · 6초 내쉬고</span><span class="l-en">in for 4 · out for 6</span></span></div>
+  <div class="eyebrow"><span class="l-ko">생활습관 교육가 · 습관 디자이너</span><span class="l-en">Lifestyle Educator · Habit Designer</span></div>
+  <h1 class="name"><span class="l-ko">정시영</span><span class="l-en">Siyoung Jeong</span><small><span class="l-ko">SIYOUNG JEONG · JOY</span><span class="l-en">정시영 · JOY</span></small></h1>
+  <p class="role"><span class="l-ko">지앤지뷰티플러스 대표 · The Soomgil Academy 설립자</span><span class="l-en">CEO, GNG Beauty Plus · Founder, The Soomgil Academy</span></p>
+  <h2 class="thesis"><span class="l-ko">증상을 쫓기보다 <em>균형</em>을 세우는,<br>당신의 생활습관 교육 파트너</span><span class="l-en">A lifestyle education partner who builds <em>balance</em> instead of chasing symptoms</span></h2>
+  <p class="sub"><span class="l-ko">14년간 1:1 생활습관 코칭 현장에서 숨·잠·자세를 관찰해 왔습니다. 뇌바로셋 원리로, 몸이 스스로 균형을 찾는 습관을 안전하게 알려 드립니다.</span><span class="l-en">For 14 years I have observed breath, sleep and posture in 1:1 lifestyle coaching. Through the Barosett principle, I teach habits that help the body find its own balance, safely.</span></p>
+  <div class="quick">
+    <a class="chip" href="tel:01065482004"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg><span class="l-ko">전화</span><span class="l-en">Call</span></a>
+    <a class="chip" href="https://pf.kakao.com/_FxmKBX" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 4C7 4 3 7.1 3 11c0 2.4 1.6 4.6 4 5.8L6 20l4-2.3c.6.1 1.3.2 2 .2 5 0 9-3.1 9-7s-4-7-9-7z"/></svg><span class="l-ko">카카오</span><span class="l-en">Kakao</span></a>
+    <a class="chip" href="mailto:thehabitforyou@gmail.com"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span class="l-ko">이메일</span><span class="l-en">Email</span></a>
+    <button class="chip" type="button" id="chip-save"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="6" height="6"/><rect x="14" y="4" width="6" height="6"/><rect x="4" y="14" width="6" height="6"/><path d="M14 14h2v2h-2zM18 18h2v2h-2zM14 18h2M18 14h2"/></svg><span class="l-ko">연락처 저장</span><span class="l-en">Save</span></button>
+  </div>
+</div></div>
+
+<!-- ABOUT -->
+<section id="about"><div class="wrap">
+  <div class="about-head"><div>
+  <div class="kicker">About</div>
+  <h2 class="h2"><span class="l-ko">원인을 찾는 길은 느립니다.<br>그래서 안전하게, 천천히, 꾸준히 갑니다.</span><span class="l-en">Finding the cause is slow. So I go safely, slowly and steadily.</span></h2>
+  </div><img class="avatar" src="character.webp" alt="정시영 대표 캐릭터 일러스트"></div>
+  <div class="prose l-ko">
+    <p>몸은 하루아침에 무너지지 않습니다. 그리고 하루아침에 다시 서지도 않습니다.</p>
+    <p>저는 14년 동안 1:1 생활습관 코칭 현장에서 많은 분의 숨, 잠, 자세, 먹는 습관을 곁에서 지켜보았습니다. 같은 불편을 말해도 원인은 사람마다 달랐고, 누구에게나 똑같이 적용하는 건강 상식이 오히려 맞지 않는 경우도 많았습니다.</p>
+    <p>그래서 빠른 해결 대신 원인을 찾는 길을 택했습니다. 원인을 찾는 일은 증상을 없애는 일보다 훨씬 오래 걸립니다. 그래서 더 안전해야 하고, 천천히 가야 하며, 꾸준해야 합니다.</p>
+    <p>뇌바로셋은 외부 자극에 몸을 맡기는 방식이 아닙니다. 내 몸을 지렛대 삼아, 몸이 스스로 일하는 환경을 만드는 생활습관 원리입니다.</p>
+    <p>한 사람의 균형 잡힌 습관이 가정과 일터, 사회로 번져 갑니다. 사람을 건강하게, 사회를 건강하게. 그것이 제가 이 일을 하는 이유입니다.</p>
+  </div>
+  <div class="prose l-en">
+    <p>The body does not fall apart overnight, and it does not rebuild overnight either.</p>
+    <p>For 14 years I have walked beside people in 1:1 lifestyle coaching, observing how they breathe, sleep, sit and eat. The same discomfort often had different causes, and one-size-fits-all health advice often did not fit at all.</p>
+    <p>So I chose to look for causes rather than quick fixes. That path takes longer, which is why it must be safe, slow and steady.</p>
+    <p>Barosett does not hand the body over to outside stimulation. It is a lifestyle principle that uses your own body as the lever, so the body can do its own work.</p>
+    <p>Healthy people, healthy society. That is why I do this work.</p>
+  </div>
+</div></section>
+
+<!-- PHILOSOPHY -->
+<section id="philosophy"><div class="wrap">
+  <div class="kicker">Philosophy</div>
+  <h2 class="h2">BBB with 3S</h2>
+  <p class="lead"><span class="l-ko">Balance of Brain &amp; Body. 뇌와 몸의 균형을 세우는 세 가지 원칙입니다.</span><span class="l-en">Balance of Brain &amp; Body, built on three principles.</span></p>
+  <div class="s3">
+    <div><b>Safely</b><span class="l-ko">안전하게</span><span class="l-en">Safe</span><p class="l-ko">안전한 범위 안에서만 권합니다</p><p class="l-en">Only within a safe range</p></div>
+    <div><b>Slowly</b><span class="l-ko">천천히</span><span class="l-en">Slow</span><p class="l-ko">몸의 반응을 재촉하지 않습니다</p><p class="l-en">Never rushing the body</p></div>
+    <div><b>Steadily</b><span class="l-ko">꾸준히</span><span class="l-en">Steady</span><p class="l-ko">작은 실천을 꾸준하게 쌓습니다</p><p class="l-en">Small practices, kept up</p></div>
+  </div>
+  <p class="lead" style="text-align:center;margin-top:24px"><span class="l-ko">함께 살피는 7가지 생활습관</span><span class="l-en">Seven areas of daily life we look at together</span></p>
+  <div class="habits">
+    <span><span class="l-ko">수면</span><span class="l-en">Sleep</span></span><span><span class="l-ko">호흡</span><span class="l-en">Breath</span></span><span><span class="l-ko">물</span><span class="l-en">Water</span></span><span><span class="l-ko">영양</span><span class="l-en">Nutrition</span></span><span><span class="l-ko">걷기</span><span class="l-en">Walking</span></span><span><span class="l-ko">자세</span><span class="l-en">Posture</span></span><span><span class="l-ko">마인드</span><span class="l-en">Mind</span></span>
+  </div>
+  <div class="bbb">
+    <div><i>1</i><p><strong><span class="l-ko">철학</span><span class="l-en">Philosophy</span></strong> Balance of Brain &amp; Body</p></div>
+    <div><i>2</i><p><strong><span class="l-ko">실천 원칙</span><span class="l-en">Principle</span></strong> BBB with 3S</p></div>
+    <div><i>3</i><p><strong><span class="l-ko">교육체계</span><span class="l-en">Education</span></strong> The Soomgil Academy</p></div>
+    <div><i>4</i><p><strong><span class="l-ko">개인 맞춤</span><span class="l-en">1:1</span></strong> <span class="l-ko">해빛 프로그램</span><span class="l-en">Haebit Program</span></p></div>
+    <div><i>5</i><p><strong><span class="l-ko">실습 교보재</span><span class="l-en">Practice kit</span></strong> My B</p></div>
+    <div><i>6</i><p><strong><span class="l-ko">확산조직</span><span class="l-en">Community</span></strong> <span class="l-ko">숨길 커뮤니티 · 가이드 · 마스터</span><span class="l-en">Soomgil community · Guides · Masters</span></p></div>
+  </div>
+</div></section>
+
+<!-- CONCERNS -->
+<section id="concerns"><div class="wrap">
+  <div class="kicker">Concerns</div>
+  <h2 class="h2"><span class="l-ko">이런 마음으로 찾아오십니다</span><span class="l-en">What people bring to me</span></h2>
+  <div class="quotes">
+    <div class="q"><h3><span class="l-ko">“원장님, 이대로 10년 괜찮으세요?”</span><span class="l-en">“Can I keep going like this for ten more years?”</span></h3><p><span class="l-ko">고객의 몸은 매일 돌보는데 정작 내 손목과 어깨는 뒷전인 관리 현장 원장님</span><span class="l-en">Studio owners who care for clients' bodies every day while their own wrists and shoulders come last</span></p></div>
+    <div class="q"><h3><span class="l-ko">“매출도 경쟁력도, 새로운 무기가 필요해요.”</span><span class="l-en">“I need something that sets my studio apart.”</span></h3><p><span class="l-ko">차별화된 웰니스 메뉴를 찾는 1인샵·센터 대표</span><span class="l-en">Solo shop and center owners looking for a distinctive wellness menu</span></p></div>
+    <div class="q"><h3><span class="l-ko">“좋다는 건 다 해 봤는데, 왜 나는 그대로일까?”</span><span class="l-en">“I've tried everything. Why am I still the same?”</span></h3><p><span class="l-ko">누구에게나 같은 건강 정보에 지쳐, 나에게 맞는 방법을 찾는 분</span><span class="l-en">People tired of generic health tips, looking for what fits them</span></p></div>
+    <div class="q"><h3><span class="l-ko">“몸은 가르치는데, 숨은 늘 얕아요.”</span><span class="l-en">“I teach movement, but my own breath stays shallow.”</span></h3><p><span class="l-ko">필라테스·요가·PT·골프·명상 지도자</span><span class="l-en">Pilates, yoga, PT, golf and meditation instructors</span></p></div>
+    <div class="q"><h3><span class="l-ko">“구성원의 건강 습관 문화를 만들고 싶어요.”</span><span class="l-en">“I want to build a healthy-habit culture at work.”</span></h3><p><span class="l-ko">임직원 웰니스 교육을 찾는 기업·기관 담당자</span><span class="l-en">Companies and institutions seeking staff wellness education</span></p></div>
+  </div>
+  <p class="after"><span class="l-ko">하나라도 마음에 걸린다면, 먼저 숨 한 번 고르고 이야기 나눠요.</span><span class="l-en">If any of these sounds familiar, let's take one breath and talk.</span></p>
+</div></section>
+
+<!-- WHY -->
+<section id="why"><div class="wrap">
+  <div class="kicker">Why Joy</div>
+  <h2 class="h2"><span class="l-ko">왜 정시영인가</span><span class="l-en">Why work with me</span></h2>
+  <div class="why">
+    <article><span class="n">14</span><div><h3><span class="l-ko">14년 1:1 현장의 관찰</span><span class="l-en">14 years of 1:1 observation</span></h3><p><span class="l-ko">책이 아니라 사람에게서 배웠습니다. 15년치 상담 기록을 7개 영역 관찰 체계로 정리해 교육의 바탕으로 삼고 있습니다.</span><span class="l-en">I learned from people, not just books. Years of consultation records are organized into a seven-area observation system that grounds my teaching.</span></p></div></article>
+    <article><span class="n">R&amp;D</span><div><h3><span class="l-ko">연구로 검증하는 교육</span><span class="l-en">Education backed by research</span></h3><p><span class="l-ko">정부 인정 기업부설연구소를 운영하며, 교육 내용은 박균섭 박사의 학술 감수를 거칩니다. 확인되지 않은 수치는 말하지 않습니다.</span><span class="l-en">We run a government-recognized corporate R&amp;D center, and content is reviewed by Prof. Kyunsub Park. We never cite unverified numbers.</span></p></div></article>
+    <article><span class="n">∞</span><div><h3><span class="l-ko">혼자가 아닌 함께 가는 구조</span><span class="l-en">You don't walk alone</span></h3><p><span class="l-ko">수업이 끝나도 커뮤니티 라운지와 단계별 과정으로 이어집니다. 배운 사람이 다시 가르치는 확산 구조를 만듭니다.</span><span class="l-en">After class, the community lounge and next-level courses continue the journey. Those who learn go on to teach.</span></p></div></article>
+  </div>
+</div></section>
+
+<!-- PROCESS -->
+<section id="process"><div class="wrap">
+  <div class="kicker">Process</div>
+  <h2 class="h2"><span class="l-ko">이렇게 함께 갑니다</span><span class="l-en">How we work together</span></h2>
+  <div class="steps">
+    <div class="step"><span class="dot">01</span><div><h3><span class="l-ko">지금의 습관을 살핍니다</span><span class="l-en">Look at today's habits</span></h3><p><span class="l-ko">상담으로 7가지 생활습관을 함께 점검하고, 원하는 변화를 분명히 합니다.</span><span class="l-en">We review your seven habit areas and clarify the change you want.</span></p></div></div>
+    <div class="step"><span class="dot">02</span><div><h3><span class="l-ko">나에게 맞는 숨을 찾습니다</span><span class="l-en">Find a breath that fits you</span></h3><p><span class="l-ko">사람마다 다른 몸에 맞춰, 개인에게 맞는 호흡과 루틴을 안내합니다.</span><span class="l-en">Every body differs, so breathing and routines are tailored to you.</span></p></div></div>
+    <div class="step"><span class="dot">03</span><div><h3><span class="l-ko">작게 실천하고 기록합니다</span><span class="l-en">Practice small, keep a record</span></h3><p><span class="l-ko">14일 실천 기록처럼 작은 단위로 시작해, 몸의 반응을 재촉하지 않습니다.</span><span class="l-en">Start small, like a 14-day practice log, without rushing the body.</span></p></div></div>
+    <div class="step"><span class="dot">04</span><div><h3><span class="l-ko">함께 돌아보고 이어 갑니다</span><span class="l-en">Reflect and keep going together</span></h3><p><span class="l-ko">일요일 밤 숨길 동행자 라운지에서 한 주를 나누고 다음 걸음을 정합니다.</span><span class="l-en">Share your week in the Sunday-night Soomgil lounge and set the next step.</span></p></div></div>
+  </div>
+</div></section>
+
+<!-- PROGRAMS -->
+<section id="programs"><div class="wrap">
+  <div class="kicker">Programs</div>
+  <h2 class="h2"><span class="l-ko">프로그램 안내</span><span class="l-en">Programs</span></h2>
+  <div class="prog">
+    <div class="card"><span class="tag"><span class="l-ko">누구나 · 첫걸음</span><span class="l-en">Open to all</span></span>
+      <h3><span class="l-ko">숨길 공개강의</span><span class="l-en">Soomgil Open Class</span></h3>
+      <dl class="meta">
+        <dt><span class="l-ko">온라인</span><span class="l-en">Online</span></dt><dd><span class="l-ko">매주 일 21:00–21:40 · 무료 (Zoom)</span><span class="l-en">Sundays 21:00–21:40 KST · free (Zoom)</span></dd>
+        <dt><span class="l-ko">오프라인</span><span class="l-en">Offline</span></dt><dd><span class="l-ko">매월 마지막 토 14:00–15:00 · 5만 원</span><span class="l-en">Last Sat monthly 14:00–15:00 · ₩50,000</span></dd>
+      </dl></div>
+    <div class="card feature"><span class="tag"><span class="l-ko">관리·지도 전문가 대상</span><span class="l-en">For practitioners</span></span>
+      <h3>The Soomgil Academy <span class="l-ko">준전문가 과정</span><span class="l-en">Associate Course</span></h3>
+      <p><span class="l-ko">뇌바로셋 이론과 실습. 20시간 전 과정 박균섭 박사 직강, 실습 교보재 My B 포함.</span><span class="l-en">Barosett theory and practice, all 20 hours taught by Prof. Kyunsub Park. My B practice kit included.</span></p>
+      <dl class="meta">
+        <dt><span class="l-ko">기간</span><span class="l-en">Length</span></dt><dd><span class="l-ko">주 4시간 × 5주 (총 20시간)</span><span class="l-en">4 hrs/week × 5 weeks (20 hrs)</span></dd>
+        <dt><span class="l-ko">수료 후</span><span class="l-en">After</span></dt><dd><span class="l-ko">수료증 게시, 고객 시연, '뇌바로셋' 메뉴 운영</span><span class="l-en">Certificate, client demos, Barosett menu</span></dd>
+        <dt><span class="l-ko">수강료</span><span class="l-en">Fee</span></dt><dd><span class="l-ko">1기 220만 원 · 2기부터 330만 원</span><span class="l-en">Cohort 1 ₩2.2M · from Cohort 2 ₩3.3M</span></dd>
+      </dl></div>
+    <div class="card"><span class="tag"><span class="l-ko">다음 단계</span><span class="l-en">Next levels</span></span>
+      <h3><span class="l-ko">전문가 · 인플루언서 미디어 · 마스터 과정</span><span class="l-en">Expert · Influencer Media · Master</span></h3>
+      <p><span class="l-ko">배운 것을 가르치는 사람으로 성장하는 단계별 과정입니다. 상담 시 안내드립니다.</span><span class="l-en">Step-by-step courses to grow from learner to teacher. Details on consultation.</span></p></div>
+    <div class="card"><span class="tag"><span class="l-ko">1:1 · 소개제</span><span class="l-en">1:1 · referral</span></span>
+      <h3><span class="l-ko">해빛 프로그램</span><span class="l-en">Haebit Program</span></h3>
+      <p><span class="l-ko">한 사람에게 맞춘 6개월 생활습관 코칭. 신청 전 사전 상담이 필요합니다.</span><span class="l-en">Six months of personalized lifestyle coaching. A prior consultation is required.</span></p>
+      <dl class="meta">
+        <dt><span class="l-ko">사전 상담</span><span class="l-en">Consult</span></dt><dd><span class="l-ko">60분 · 50만 원 (VAT 포함, 진행 시 차감)</span><span class="l-en">60 min · ₩500,000 (VAT incl., credited if you join)</span></dd>
+      </dl></div>
+    <div class="card"><span class="tag"><span class="l-ko">기업 · 기관</span><span class="l-en">Organizations</span></span>
+      <h3><span class="l-ko">웰니스 교육 · 강연</span><span class="l-en">Wellness talks &amp; training</span></h3>
+      <p><span class="l-ko">임직원 생활습관 교육, 커뮤니티 특강. 대상과 일정에 맞춰 협의합니다.</span><span class="l-en">Staff habit education and community talks, tailored to your audience.</span></p></div>
+  </div>
+  <p class="note"><span class="l-ko">모든 프로그램은 교육·코칭이며 질병의 진단이나 치료를 하지 않습니다.</span><span class="l-en">All programs are education and coaching, not diagnosis or treatment.</span></p>
+</div></section>
+
+<!-- PROMISE -->
+<section id="promise"><div class="wrap">
+  <div class="kicker">Promise</div>
+  <h2 class="h2"><span class="l-ko">정시영의 약속</span><span class="l-en">My promise</span></h2>
+  <ol class="promise">
+    <li><div><span class="l-ko">진단하거나 치료하지 않겠습니다.</span><span class="l-en">I will not diagnose or treat.</span><small class="l-ko">저는 교육하고 코칭합니다. 치료가 필요하면 의료진과 상의하시도록 권합니다.</small><small class="l-en">I educate and coach. When treatment is needed, I'll point you to medical professionals.</small></div></li>
+    <li><div><span class="l-ko">효과를 과장하지 않겠습니다.</span><span class="l-en">I will not exaggerate results.</span><small class="l-ko">몸의 변화는 사람마다 다르고, 시간이 걸립니다.</small><small class="l-en">Change differs from person to person and takes time.</small></div></li>
+    <li><div><span class="l-ko">재촉하지 않겠습니다.</span><span class="l-en">I will not rush you.</span><small class="l-ko">안전하게, 천천히, 꾸준히. 당신의 속도를 따릅니다.</small><small class="l-en">Safely, slowly, steadily, at your pace.</small></div></li>
+    <li><div><span class="l-ko">나눈 이야기와 기록을 지키겠습니다.</span><span class="l-en">I will protect what you share.</span><small class="l-ko">기록은 동의하신 범위 안에서만 다룹니다.</small><small class="l-en">Records are used only within what you agree to.</small></div></li>
+  </ol>
+</div></section>
+
+<!-- FAQ -->
+<section id="faq"><div class="wrap">
+  <div class="kicker">FAQ</div>
+  <h2 class="h2"><span class="l-ko">자주 묻는 질문</span><span class="l-en">Questions</span></h2>
+  <details><summary><span class="l-ko">뇌바로셋이 무엇인가요?</span><span class="l-en">What is Barosett?</span></summary><p><span class="l-ko">외부 자극에 몸을 맡기지 않고, 내 몸을 지렛대 삼아 몸이 스스로 일하는 환경을 만드는 생활습관 원리입니다. 실습 교보재 My B와 호흡 루틴으로 익힙니다.</span><span class="l-en">A lifestyle principle that uses your own body as the lever so it can do its own work, practiced with the My B kit and breathing routines.</span></p></details>
+  <details><summary><span class="l-ko">병원 치료와 무엇이 다른가요?</span><span class="l-en">How is this different from medical care?</span></summary><p><span class="l-ko">진단과 치료가 아닌 생활습관 교육·코칭입니다. 치료 중이시라면 담당 의료진과 먼저 상의해 주세요.</span><span class="l-en">This is lifestyle education and coaching, not diagnosis or treatment. If you are under treatment, please consult your doctor first.</span></p></details>
+  <details><summary><span class="l-ko">관련 전공이 없어도 아카데미를 들을 수 있나요?</span><span class="l-en">Do I need a background to join the Academy?</span></summary><p><span class="l-ko">네. 에스테틱·체형관리 원장님부터 필라테스·요가·PT·골프·명상 지도자까지, 몸을 돌보는 일을 하는 분이면 함께하실 수 있습니다.</span><span class="l-en">No. Studio owners and movement instructors of all kinds are welcome.</span></p></details>
+  <details><summary><span class="l-ko">가이드·마스터는 국가 자격인가요?</span><span class="l-en">Are Guide and Master national licenses?</span></summary><p><span class="l-ko">아닙니다. 웰니스 교육과 생활습관 관찰을 안내하는 회사의 교육 단계이며, 의료인이나 국가 자격을 뜻하지 않습니다.</span><span class="l-en">No. They are our company's education levels for guiding wellness and habit observation, not medical or national credentials.</span></p></details>
+  <details><summary><span class="l-ko">처음에는 어떻게 시작하면 좋을까요?</span><span class="l-en">How should I start?</span></summary><p><span class="l-ko">일요일 밤 무료 온라인 공개강의에 먼저 와 보세요. 함께 숨 쉬는 40분이면 숨길이 어떤 곳인지 느끼실 수 있습니다.</span><span class="l-en">Join the free Sunday-night online class first. Forty minutes of breathing together will show you what Soomgil is like.</span></p></details>
+</div></section>
+
+<!-- REFERRAL -->
+<section id="referral"><div class="wrap">
+  <div class="kicker">Referral</div>
+  <h2 class="h2"><span class="l-ko">이런 분을 소개해 주세요</span><span class="l-en">Who to refer</span></h2>
+  <div class="ref">
+    <div><b><span class="l-ko">고객의 몸을 돌보는 관리 현장 원장님</span><span class="l-en">Studio owners who care for clients' bodies</span></b><span><span class="l-ko">에스테틱·피부관리실·체형관리 1인샵, 직업병과 매출 정체로 고민하는 분</span><span class="l-en">Esthetics, skincare and body-care shops facing burnout or flat sales</span></span></div>
+    <div><b><span class="l-ko">몸을 가르치는 지도자</span><span class="l-en">Movement instructors</span></b><span><span class="l-ko">필라테스·요가·PT·골프 프로·명상 강사</span><span class="l-en">Pilates, yoga, PT, golf pros, meditation teachers</span></span></div>
+    <div><b><span class="l-ko">건강한 조직 문화를 찾는 리더</span><span class="l-en">Leaders building healthy workplaces</span></b><span><span class="l-ko">임직원 웰니스 교육을 준비하는 기업·기관·학교 담당자</span><span class="l-en">Companies, institutions and schools planning wellness education</span></span></div>
+  </div>
+  <div class="ask"><span class="l-ko">“고객을 돌보느라 정작 자신은 지쳐 있는 원장님이 계시면, 저를 소개해 주세요.”</span><span class="l-en">“If you know a studio owner worn out from caring for others, please introduce me.”</span>
+    <small><span class="l-ko">소개해 주신 분께는 첫 상담을 더 세심하게 준비하겠습니다.</span><span class="l-en">I'll prepare their first consultation with extra care.</span></small></div>
+</div></section>
+
+<!-- CAREER -->
+<section id="career"><div class="wrap">
+  <div class="kicker">Career</div>
+  <h2 class="h2"><span class="l-ko">경력 및 활동</span><span class="l-en">Career &amp; Activities</span></h2>
+  <div class="tl">
+    <div><span class="k"><span class="l-ko">현재</span><span class="l-en">NOW</span></span><div><h3><span class="l-ko">지앤지뷰티플러스 대표</span><span class="l-en">CEO, GNG Beauty Plus</span></h3><p><span class="l-ko">14년간 웰니스·생활습관 교육 사업 운영</span><span class="l-en">14 years in wellness and lifestyle education</span></p></div></div>
+    <div><span class="k"><span class="l-ko">설립</span><span class="l-en">FOUNDER</span></span><div><h3>The Soomgil Academy</h3><p><span class="l-ko">뇌바로셋 기반 준전문가~마스터 단계별 웰니스 교육</span><span class="l-en">Barosett-based wellness education, Associate to Master</span></p></div></div>
+    <div><span class="k"><span class="l-ko">연구</span><span class="l-en">R&amp;D</span></span><div><h3><span class="l-ko">기업부설연구소 운영</span><span class="l-en">Corporate R&amp;D Center</span></h3><p><span class="l-ko">정부 인정 연구소 · 7개 영역 생활습관 관찰 체계 구축</span><span class="l-en">Government-recognized · seven-area habit observation system</span></p></div></div>
+    <div><span class="k"><span class="l-ko">코칭</span><span class="l-en">COACHING</span></span><div><h3><span class="l-ko">해빛 1:1 생활습관 코칭</span><span class="l-en">Haebit 1:1 Lifestyle Coaching</span></h3><p><span class="l-ko">소개제로 운영하는 개인 맞춤 프로그램</span><span class="l-en">Referral-only personalized program</span></p></div></div>
+    <div><span class="k">BNI</span><div><h3>BNI GBC Korea <span class="l-ko">의장</span><span class="l-en">Chair</span></h3><p>Global Business Committee</p></div></div>
+    <div><span class="k"><span class="l-ko">미디어</span><span class="l-en">MEDIA</span></span><div><h3><span class="l-ko">인터넷신문 BBB Insight 발행</span><span class="l-en">Publisher, BBB Insight</span></h3><p><span class="l-ko">강남구 등록 인터넷신문</span><span class="l-en">Online newspaper registered in Gangnam-gu</span></p></div></div>
+    <div><span class="k"><span class="l-ko">저서</span><span class="l-en">BOOK</span></span><div><h3>「숨부터 바꾸면 손이 편해진다」</h3><p><span class="l-ko">전자책 출간 준비 중</span><span class="l-en">E-book forthcoming</span></p></div></div>
+    <div><span class="k">AI</span><div><h3><span class="l-ko">AI콘텐츠연구소</span><span class="l-en">AI Content Lab</span></h3><p><span class="l-ko">AI 교육 · AI 책쓰기 · AI 퍼널마케팅 · B2B 영업마케팅 교육</span><span class="l-en">AI education, AI book writing, funnel marketing, B2B sales training</span></p></div></div>
+  </div>
+  <div class="partner"><b><span class="l-ko">학술 파트너 · 박균섭 박사</span><span class="l-en">Academic partner · Prof. Kyunsub Park</span></b>
+    <p><span class="l-ko">GnG Neuroscience Institute 소장 · 경희대학교 동서의학대학원 박사 · 경희대 동서의학대학원 교수 역임</span><span class="l-en">Director, GnG Neuroscience Institute · PhD, Kyung Hee University Graduate School of East-West Medicine · Former professor there</span></p></div>
+</div></section>
+
+<!-- CONTACT -->
+<section id="contact"><div class="wrap">
+  <div class="kicker">Contact</div>
+  <h2 class="h2"><span class="l-ko">편하게 연락 주세요</span><span class="l-en">Get in touch</span></h2>
+  <p class="lead"><span class="l-ko">상담 가능 시간 평일 09:00–18:00. 어떤 고민이든 괜찮습니다.</span><span class="l-en">Weekdays 09:00–18:00 KST. Any question is welcome.</span></p>
+  <div class="clist">
+    <div class="row"><span class="lb"><span class="l-ko">대표 직통</span><span class="l-en">Direct</span></span><a href="tel:01065482004">010-6548-2004</a><button class="cp" data-copy="010-6548-2004"><span class="l-ko">복사</span><span class="l-en">Copy</span></button></div>
+    <div class="row"><span class="lb"><span class="l-ko">대표 전화</span><span class="l-en">Office</span></span><a href="tel:025562009">02-556-2009</a><button class="cp" data-copy="02-556-2009"><span class="l-ko">복사</span><span class="l-en">Copy</span></button></div>
+    <div class="row"><span class="lb"><span class="l-ko">이메일</span><span class="l-en">Email</span></span><a href="mailto:thehabitforyou@gmail.com">thehabitforyou@gmail.com</a><button class="cp" data-copy="thehabitforyou@gmail.com"><span class="l-ko">복사</span><span class="l-en">Copy</span></button></div>
+    <div class="row"><span class="lb"><span class="l-ko">아카데미</span><span class="l-en">Academy</span></span><a href="mailto:gngplusofficial@gmail.com">gngplusofficial@gmail.com</a><button class="cp" data-copy="gngplusofficial@gmail.com"><span class="l-ko">복사</span><span class="l-en">Copy</span></button></div>
+    <div class="row"><span class="lb"><span class="l-ko">카카오채널</span><span class="l-en">KakaoTalk</span></span><a href="https://pf.kakao.com/_FxmKBX" target="_blank" rel="noopener">숨길아카데미 · _FxmKBX</a><button class="cp" data-copy="_FxmKBX"><span class="l-ko">복사</span><span class="l-en">Copy</span></button></div>
+    <div class="row"><span class="lb"><span class="l-ko">홈페이지</span><span class="l-en">Website</span></span><a href="https://gngbeautyplus.com" target="_blank" rel="noopener">gngbeautyplus.com</a><span></span></div>
+    <div class="row"><span class="lb">Instagram</span><a href="https://www.instagram.com/bbb.joy_1004/" target="_blank" rel="noopener">@bbb.joy_1004</a><span></span></div>
+    <div class="row"><span class="lb">YouTube</span><a href="https://www.youtube.com/@bbb.joy_1004" target="_blank" rel="noopener">@bbb.joy_1004</a><span></span></div>
+    <div class="row"><span class="lb">TikTok</span><a href="https://www.tiktok.com/@joy.bbb3" target="_blank" rel="noopener">@joy.bbb3</a><span></span></div>
+    <div class="row"><span class="lb"><span class="l-ko">본사</span><span class="l-en">Office</span></span><a href="https://map.kakao.com/link/search/%EB%AA%A9%EB%8F%99%20%ED%98%84%EB%8C%8041%ED%83%80%EC%9B%8C" target="_blank" rel="noopener"><span class="l-ko">서울 목동 현대41타워 1710호</span><span class="l-en">Hyundai 41 Tower #1710, Mokdong, Seoul</span></a><span></span></div>
+  </div>
+
+  <div class="btns">
+    <button class="btn main" id="b-qr" type="button"><span class="l-ko">연락처 QR 보기</span><span class="l-en">Contact QR</span></button>
+    <button class="btn" id="b-card" type="button"><span class="l-ko">명함 정보 복사</span><span class="l-en">Copy card</span></button>
+  </div>
+  <div class="qrbox" id="qrbox" hidden>
+    <div class="qr" id="qr" aria-label="연락처 QR 코드"></div>
+    <p><span class="l-ko">휴대폰 카메라로 찍으면 연락처에 바로 저장됩니다.</span><span class="l-en">Scan with your phone camera to save the contact.</span></p>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <p class="slogan"><span class="l-ko">사람을 건강하게, 사회를 건강하게.</span><span class="l-en">Healthy people, healthy society.</span></p>
+  <p>GNG Beauty Plus · BBB with 3S — Safely · Slowly · Steadily<br>
+  <span class="l-ko">본 페이지의 프로그램은 생활습관 교육·코칭 서비스이며, 질병의 진단·치료를 목적으로 하지 않습니다.</span><span class="l-en">Programs on this page are lifestyle education and coaching, not medical diagnosis or treatment.</span></p>
+</div></footer>
+
+<nav class="bar" aria-label="빠른 연락"><div class="wrap">
+  <a href="tel:01065482004"><span class="l-ko">전화</span><span class="l-en">Call</span></a>
+  <a href="https://pf.kakao.com/_FxmKBX" target="_blank" rel="noopener"><span class="l-ko">카카오톡</span><span class="l-en">Kakao</span></a>
+  <button class="go" type="button" id="bar-save"><span class="l-ko">연락처 저장</span><span class="l-en">Save contact</span></button>
+</div></nav>
+<div class="toast" id="toast" hidden></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+<script>
+(function(){
+  var body=document.body, ko=document.getElementById('bt-ko'), en=document.getElementById('bt-en');
+  function setLang(l){body.classList.toggle('en',l==='en');ko.setAttribute('aria-pressed',l==='ko');en.setAttribute('aria-pressed',l==='en');document.documentElement.lang=l;try{localStorage.setItem('joy-lang',l)}catch(e){}}
+  ko.onclick=function(){setLang('ko')};en.onclick=function(){setLang('en')};
+  try{var s=localStorage.getItem('joy-lang');if(s)setLang(s)}catch(e){}
+
+  var toast=document.getElementById('toast'),tt;
+  function say(m){toast.textContent=m;toast.hidden=false;clearTimeout(tt);tt=setTimeout(function(){toast.hidden=true},1800)}
+  function isEn(){return body.classList.contains('en')}
+  function copy(text){
+    var ok=function(){say(isEn()?'Copied':'복사했습니다')};
+    var fb=function(){var t=document.createElement('textarea');t.value=text;document.body.appendChild(t);t.select();try{document.execCommand('copy');ok()}catch(e){say(isEn()?'Select and copy manually':'직접 선택해 복사해 주세요')}t.remove()};
+    try{navigator.clipboard.writeText(text).then(ok,fb)}catch(e){fb()}
+  }
+  document.querySelectorAll('.cp').forEach(function(b){b.onclick=function(){copy(b.dataset.copy)}});
+  document.getElementById('b-card').onclick=function(){copy('정시영 (Siyoung Jeong, Joy)\n지앤지뷰티플러스 대표 · The Soomgil Academy 설립자\n상담 010-6548-2004 · 대표 02-556-2009\nthehabitforyou@gmail.com\n카카오채널 _FxmKBX · gngbeautyplus.com\nBBB with 3S — Safely · Slowly · Steadily')};
+
+  var vcard=['BEGIN:VCARD','VERSION:3.0','N:정;시영;;;','FN:정시영 (Siyoung Jeong)','ORG:지앤지뷰티플러스 (GNG Beauty Plus)','TITLE:대표 · The Soomgil Academy 설립자','TEL;TYPE=CELL:010-6548-2004','TEL;TYPE=WORK:02-556-2009','EMAIL:thehabitforyou@gmail.com','URL:https://gngbeautyplus.com','NOTE:BBB with 3S — Safely · Slowly · Steadily','END:VCARD'].join('\n');
+  var drawn=false, box=document.getElementById('qrbox');
+  function showQR(){
+    box.hidden=false;
+    if(!drawn&&window.qrcode){try{qrcode.stringToBytes=qrcode.stringToBytesFuncs['UTF-8'];var q=qrcode(0,'M');q.addData(vcard,'Byte');q.make();document.getElementById('qr').innerHTML=q.createSvgTag({cellSize:4,margin:0,scalable:true});drawn=true}catch(e){document.getElementById('qr').textContent='QR 생성 실패'}}
+    box.scrollIntoView({behavior:'smooth',block:'center'});
+  }
+  document.getElementById('b-qr').onclick=showQR;
+  document.getElementById('chip-save').onclick=showQR;
+  document.getElementById('bar-save').onclick=showQR;
+})();
+</script>
+
+</body>
+</html>
